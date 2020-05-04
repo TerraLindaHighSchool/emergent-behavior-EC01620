@@ -18,7 +18,7 @@ public class Bird extends Animal
     // The likelihood of a bird breeding (in percent).
     private static final int BREEDING_PROBABILITY = 7;
     // The maximum number of births.
-    private static final int MAX_LITTER_SIZE = 3;
+    private static final int MAX_LITTER_SIZE = 40;
     // The food value of a single moth. In effect, this is the
     // number of steps a bird can go before it has to eat again.
     private static final int MOTH_FOOD_VALUE = 10;
