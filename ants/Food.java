@@ -58,8 +58,8 @@ public class Food extends Actor
     public void removeCrumb()
     {
         crumbs -= 1;
-        updateImage();
         image.clear();
+        updateImage();
         if (crumbs == 0)
         {
             getWorld().removeObject(this);
