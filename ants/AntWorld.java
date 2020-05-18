@@ -41,10 +41,18 @@ public class AntWorld extends World
         addObject(food5,562,148);
         Food food6 = new Food();
         addObject(food6,92,210);
-        AntHill antHill2 = new AntHill();
+        AntHill antHill2 = new AntHill(540);
         addObject(antHill2,531,530);
         removeObject(antHill2);
         AntHill antHill3 = new AntHill(1000);
         addObject(antHill3,513,468);
+    }
+    
+    public void act()
+    {
+        if (getObjects(Food.class).size() == 0 && getObjects(Pheromone.class).size() == 0)
+        {
+            Greenfoot.stop();
+        }
     }
 }

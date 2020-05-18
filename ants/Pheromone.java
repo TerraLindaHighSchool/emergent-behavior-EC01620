@@ -15,7 +15,7 @@ public class Pheromone extends Actor
     public Pheromone()
     {
         intensity = MAX_INTENSITY;
-        
+        updateImage();
     }
     
     /**
